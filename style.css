@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Neon Gradient Background */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #4e00c2, #ff00c8, #ff8ae3);
+  background-size: 300% 300%;
+  animation: bgAnimation 12s infinite alternate ease-in-out;
+}
+
+@keyframes bgAnimation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+/* Glassmorphism Card */
+.wrapper {
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  width: 90%;
+  max-width: 32em;
+  padding: 3em 4em;
+  border-radius: 1.5em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 2em;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+/* Timer Display */
+.timer-display {
+  font-size: 3em;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Space Mono", monospace;
+  margin-bottom: 1em;
+  text-shadow: 0 0 8px #ffffff99;
+}
+
+/* Inputs */
+.inputs {
+  display: flex;
+  justify-content: center;
+  gap: 1.2em;
+}
+
+.inputs input {
+  width: 3.2em;
+  font-size: 1.4em;
+  padding: 0.4em 0.3em;
+  text-align: center;
+  border-radius: 0.4em;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+/* Add Alarm Button */
+#set {
+  background: linear-gradient(135deg, #5f00f5, #9b4bff);
+  color: #ffffff;
+  border: none;
+  padding: 1em 2em;
+  margin: 2em auto 0;
+  border-radius: 3em;
+  display: block;
+  font-size: 1.1em;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.25s ease-in-out;
+}
+
+#set:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #7500ff, #b781ff);
+}
+
+/* Alarm block style */
+.alarm {
+  display: grid;
+  grid-template-columns: 7fr 1fr 1fr;
+  gap: 1em;
+  margin-top: 1.5em;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4);
+  padding: 1em;
+  border-radius: 0.8em;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Toggle button */
+.alarm input[type="checkbox"] {
+  appearance: none;
+  width: 3.6em;
+  height: 1.8em;
+  background: #cfcfe6;
+  border-radius: 1.2em;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.alarm input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: #636383;
+  top: 0.15em;
+  left: 0.2em;
+  transition: 0.3s ease;
+}
+
+.alarm input[type="checkbox"]:checked {
+  background: #9cd0ff;
+}
+
+.alarm input[type="checkbox"]:checked:before {
+  left: 2em;
+  background: #006eff;
+}
+
+/* Delete Button */
+.deleteButton {
+  background: transparent;
+  border: none;
+  font-size: 1.7em;
+  color: #ff3f70;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.deleteButton:hover {
+  transform: scale(1.2);
+  color: #ff1655;
+}
+
+/* JAGO INDIA JAGO text */
+.jago-text {
+  text-align: center;
+  margin-top: 2.5em;
+  font-size: 2.4em;
+  font-weight: 700;
+  color: white;
+  font-family: "Space Mono", monospace;
+  letter-spacing: 3px;
+  text-shadow: 0 0 12px #ffffffaa;
+}

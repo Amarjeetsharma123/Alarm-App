@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amarjeet Sharma - Web Developer Portfolio & Resume</title>
+    <!--
+        Tailwind CSS CDN for quick setup.
+        In a real project, you'd typically install Tailwind via npm and use a build process.
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--
+        Google Fonts - Inter for a clean, modern look.
+        This is loaded from Google Fonts CDN.
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font family globally */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #1a202c; /* Dark background for track */
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #4a5568; /* Greyish thumb */
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #718096; /* Lighter grey on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 leading-relaxed">
+
+    <header class="bg-gray-800 shadow-lg py-6 md:py-8 px-4 md:px-8 rounded-b-xl">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-blue-400 mb-2">Amarjeet Sharma</h1>
+                <p class="text-xl md:text-2xl text-gray-300">Full Stack Web Developer</p>
+            </div>
+            <nav>
+                <ul class="flex flex-wrap justify-center gap-4 md:gap-6 text-lg">
+                    <li><a href="#about" class="hover:text-blue-400 transition duration-300">About</a></li>
+                    <li><a href="#skills" class="hover:text-blue-400 transition duration-300">Skills</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400 transition duration-300">Projects</a></li>
+                    <li><a href="#experience" class="hover:text-blue-400 transition duration-300">Experience</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-4 md:p-8 space-y-16 md:space-y-24">
+
+        <section id="about" class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-semibold text-blue-400 mb-6 border-b-2 border-blue-400 pb-2">About Me</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Hello! I'm <span class="font-bold text-blue-300">Amarjeet Sharma</span>, a passionate and results-driven Full Stack Web Developer with 5+ years of experience building and deploying scalable web applications. I specialize in crafting robust back-end systems and intuitive front-end user interfaces. My expertise spans across modern JavaScript frameworks, server-side technologies, and database management, allowing me to deliver end-to-end solutions. I thrive in collaborative environments and am always eager to learn new technologies and solve challenging problems.
+            </p>
+        </section>
+
+        <section id="skills" class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-semibold text-blue-400 mb-6 border-b-2 border-blue-400 pb-2">Skills</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-300">
+                <div>
+                    <h3 class="text-2xl font-medium text-blue-300 mb-3">Frontend</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>HTML5, CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js, Vue.js</li>
+                        <li>Tailwind CSS, Bootstrap</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-medium text-blue-300 mb-3">Backend</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>Java ,Spring</li>
+                        <li>Python, Django, Flask</li>
+                        <li>RESTful APIs</li>
+                        <li>GraphQL</li>
+                        <li>Authentication (OAuth, JWT)</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-medium text-blue-300 mb-3">Databases & Tools</h3>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>MongoDB, PostgreSQL, MySQL</li>
+                        <li>Git, GitHub, GitLab</li>
+                        <li>Docker</li>
+                        <li>AWS (EC2, S3, Lambda)</li>
+                        <li>Jira, Trello</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-semibold text-blue-400 mb-6 border-b-2 border-blue-400 pb-2">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-blue-300 mb-3">E-commerce Platform</h3>
+                    <p class="text-gray-300 mb-4">
+                        A full-featured online store with product listings, shopping cart, user authentication, and payment gateway integration.
+                    </p>
+                    <p class="text-sm text-gray-400 mb-4">
+                        <span class="font-semibold">Technologies:</span> React, Node.js, Express, MongoDB, Stripe API, Tailwind CSS
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://your-ecommerce-live-demo.com" target="_blank" rel="noopener noreferrer"
+                           class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm">
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/yourusername/ecommerce-repo" target="_blank" rel="noopener noreferrer"
+                           class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm">
+                            GitHub Repo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-blue-300 mb-3">Real-time Chat Application</h3>
+                    <p class="text-gray-300 mb-4">
+                        A real-time messaging application with user presence, private chats, and group channels.
+                    </p>
+                    <p class="text-sm text-gray-400 mb-4">
+                        <span class="font-semibold">Technologies:</span> Vue.js, Socket.IO, Node.js, PostgreSQL, Redis
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://your-chat-live-demo.com" target="_blank" rel="noopener noreferrer"
+                           class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm">
+                            Live Demo
+                        </a>
+                        <a href="https://github.com/yourusername/chat-app-repo" target="_blank" rel="noopener noreferrer"
+                           class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm">
+                            GitHub Repo
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-bold text-blue-300 mb-3">Task Management API</h3>
+                    <p class="text-gray-300 mb-4">
+                        A robust RESTful API for managing tasks, users, and projects with secure authentication.
+                    </p>
+                    <p class="text-sm text-gray-400 mb-4">
+                        <span class="font-semibold">Technologies:</span> Python, Django REST Framework, MySQL, Docker
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="https://your-api-docs.com" target="_blank" rel="noopener noreferrer"
+                           class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm">
+                            API Docs
+                        </a>
+                        <a href="https://github.com/yourusername/task-api-repo" target="_blank" rel="noopener noreferrer"
+                           class="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300 text-sm">
+                            GitHub Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-semibold text-blue-400 mb-6 border-b-2 border-blue-400 pb-2">Experience</h2>
+            <div class="space-y-8">
+                <div class="border-l-4 border-blue-500 pl-4">
+                    <h3 class="text-2xl font-bold text-blue-300">Senior Web Developer</h3>
+                    <p class="text-xl text-gray-300 mb-1">Tech Solutions Inc. | Jan 2022 - Present</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
+                        <li>Led the development of a new customer portal using React and Node.js, improving user engagement by 25%.</li>
+                        <li>Designed and implemented RESTful APIs for various internal tools, enhancing data flow efficiency by 30%.</li>
+                        <li>Mentored junior developers, conducting code reviews and promoting best practices.</li>
+                        <li>Optimized database queries and application performance, resulting in a 15% reduction in load times.</li>
+                    </ul>
+                </div>
+                <div class="border-l-4 border-blue-500 pl-4">
+                    <h3 class="text-2xl font-bold text-blue-300">Junior Web Developer</h3>
+                    <p class="text-xl text-gray-300 mb-1">Web Innovations Co. | Jun 2019 - Dec 2021</p>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
+                        <li>Developed and maintained responsive front-end components for client websites using HTML, CSS, and JavaScript.</li>
+                        <li>Assisted in integrating third-party APIs and services into existing applications.</li>
+                        <li>Collaborated with design team to translate UI/UX wireframes into functional web pages.</li>
+                        <li>Participated in daily stand-ups and sprint planning sessions in an Agile environment.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-lg">
+            <h2 class="text-3xl md:text-4xl font-semibold text-blue-400 mb-6 border-b-2 border-blue-400 pb-2">Contact</h2>
+            <p class="text-lg text-gray-300 mb-6">
+                I'm always open to new opportunities and collaborations. Feel free to reach out!
+            </p>
+            <div class="space-y-4">
+                <p class="text-lg text-gray-300">
+                    <span class="font-semibold text-blue-300">Email:</span> <a href="mailto:your.email@example.com" class="text-blue-400 hover:underline">your.email@example.com</a>
+                </p>
+                <p class="text-lg text-gray-300">
+                    <span class="font-semibold text-blue-300">LinkedIn:</span> <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">linkedin.com/in/yourprofile</a>
+                </p>
+                <p class="text-lg text-gray-300">
+                    <span class="font-semibold text-blue-300">GitHub:</span> <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">github.com/yourusername</a>
+                </p>
+                <p class="text-lg text-gray-300">
+                    <span class="font-semibold text-blue-300">Phone:</span> +1 (555) 123-4567 (Optional)
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 text-center py-6 px-4 md:px-8 mt-16 rounded-t-xl shadow-lg">
+        <p>&copy; 2025 Your Name. All rights reserved. Built with HTML, Tailwind CSS, and a passion for web development.</p>
+    </footer>
+
+</body>
+</html>
